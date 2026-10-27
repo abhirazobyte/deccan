@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Thank You | Deccan Odyssey</title>
+<link rel="icon" href="https://www.deccanodyssey.com/gifs/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://www.deccanodyssey.com/wp-content/themes/deccan-odyssey/assets/img/hero-train-night-1600.webp">
+<link rel="stylesheet" id="do-v2-css" href="https://www.deccanodyssey.com/wp-content/themes/deccan-odyssey/assets/css/v2.css?ver=2.4.0" media="all">
+<style>
+/* Deccan Odyssey theme tokens (from wp-content/themes/deccan-odyssey/assets/css/v2.css) */
+:root{
+	--navy:#174573;
+	--night:#0E2A47;
+	--deep:#081A2E;
+	--gold:#fec107;
+	--old-gold:#9f7e00;
+	--paper:#fff;
+	--mist:#EEF2F7;
+	--ink:#1C2733;
+	--muted:#56616F;
+	--line:#D5DDE7;
+	--wa:#25D366;
+	--serif:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+	--sans:"Jost","Futura","Century Gothic","Segoe UI",system-ui,sans-serif;
+	--radius:18px;
+	--shadow:0 18px 50px rgba(8,26,46,.14);
+	--shadow-sm:0 8px 24px rgba(8,26,46,.10);
+}
+.ty h1,.ty h2,.ty h3{font-family:var(--serif);font-weight:600;color:var(--night);margin:0;letter-spacing:.1px;}
+.ty p{margin:0;}
+.ty a{color:inherit;}
+.ty img{max-width:100%;display:block;}
+
+.ty-wrap{max-width:1140px;margin:0 auto;padding:0 28px;}
+.ty-kicker{
+	display:inline-flex;align-items:center;gap:12px;
+	font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--old-gold);
+}
+.ty-kicker::before{content:"";width:28px;height:2px;background:var(--gold);}
+.ty-ulink{
+	text-decoration:none;color:var(--navy);font-weight:500;
+	border-bottom:1.5px solid var(--gold);padding-bottom:1px;transition:color .15s ease;
+}
+.ty-ulink:hover{color:var(--old-gold);}
+.ty mark{background:linear-gradient(transparent 58%,rgba(254,193,7,.5) 58%);color:inherit;padding:0 2px;}
+
+/* ---------- Hero ---------- */
+.ty-hero{
+	position:relative;isolation:isolate;overflow:hidden;color:#fff;text-align:center;
+	padding:0 0 150px;background:var(--deep);
+}
+.ty-hero-img{
+	position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;
+	transform:scale(1.06);animation:tyZoom 18s ease-out forwards;
+}
+.ty-hero::before{
+	content:"";position:absolute;inset:0;z-index:-1;
+	background:
+		radial-gradient(ellipse at 50% 30%,rgba(14,42,71,.55),rgba(8,26,46,.92) 70%),
+		linear-gradient(180deg,rgba(8,26,46,.65),rgba(8,26,46,.85));
+}
+@keyframes tyZoom{to{transform:scale(1);}}
+.ty-coach{position:absolute;left:0;right:0;bottom:0;height:8px;
+	background:linear-gradient(var(--gold) 0 2px,transparent 2px 5px,var(--gold) 5px 6px,transparent 6px);opacity:.9;}
+
+.ty-hero-inner{max-width:760px;margin:0 auto;padding:calc(var(--head-h) + var(--util-h) + 56px) 28px 0;}
+.ty-check{
+	width:84px;height:84px;margin:0 auto 28px;border-radius:50%;
+	display:flex;align-items:center;justify-content:center;
+	background:rgba(254,193,7,.12);border:1.5px solid rgba(254,193,7,.65);
+	box-shadow:0 0 0 10px rgba(254,193,7,.06);
+}
+.ty-check svg{width:40px;height:40px;}
+.ty-check path{stroke:var(--gold);stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round;
+	stroke-dasharray:40;stroke-dashoffset:40;animation:tyDraw .8s .35s ease-out forwards;}
+@keyframes tyDraw{to{stroke-dashoffset:0;}}
+.ty-hero .ty-kicker{color:var(--gold);margin-bottom:18px;}
+.ty-hero .ty-kicker::after{content:"";width:28px;height:2px;background:var(--gold);}
+.ty-hero h1{color:#fff;font-size:clamp(36px,6vw,64px);line-height:1.08;margin-bottom:24px;}
+.ty-hero h1 em{font-style:italic;color:var(--gold);font-weight:500;}
+.ty-lead{font-size:clamp(17px,1.6vw,19.5px);line-height:1.7;color:rgba(255,255,255,.88);margin:0 auto 28px;max-width:640px;}
+.ty-note{
+	display:flex;gap:14px;align-items:flex-start;text-align:left;max-width:600px;margin:0 auto;
+	padding:16px 20px;border-radius:14px;
+	background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+	backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+	font-size:15.5px;line-height:1.6;color:rgba(255,255,255,.85);
+}
+.ty-note svg{flex:none;width:22px;height:22px;margin-top:2px;color:var(--gold);}
+.ty-note strong{color:#fff;font-weight:600;}
+.ty-sign{margin:40px auto 0;}
+.ty-sign-name{font-family:var(--serif);font-style:italic;font-weight:500;font-size:26px;color:var(--gold);line-height:1.2;}
+.ty-sign-role{font-size:14.5px;color:rgba(255,255,255,.7);margin-top:6px;}
+
+/* ---------- Contact cards (overlap hero) ---------- */
+.ty-contact{position:relative;z-index:2;margin-top:-96px;}
+.ty-contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.ty-card{
+	background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);
+	padding:30px 26px 28px;text-align:center;border-top:3px solid var(--gold);
+	transition:transform .25s ease,box-shadow .25s ease;
+}
+.ty-card:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(8,26,46,.18);}
+.ty-ico{
+	width:52px;height:52px;margin:0 auto 16px;border-radius:50%;
+	display:flex;align-items:center;justify-content:center;background:var(--mist);color:var(--navy);
+}
+.ty-ico svg{width:24px;height:24px;}
+.ty-card-k{font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--old-gold);margin-bottom:12px;}
+.ty-card-row{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;font-weight:500;font-size:16.5px;line-height:2;}
+.ty-card-row a{text-decoration:none;color:var(--night);}
+.ty-card-row a:hover{color:var(--old-gold);}
+.ty-wa-tag{
+	display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+	color:#128C4B !important;background:rgba(37,211,102,.12);padding:3px 10px;border-radius:999px;line-height:1.6;
+}
+.ty-wa-tag:hover{background:rgba(37,211,102,.22);}
+.ty-card-v{display:block;font-weight:500;font-size:16px;color:var(--night);line-height:2;text-decoration:none;word-break:break-word;}
+.ty-card-v:hover{color:var(--old-gold);}
+.ty-card-btn{
+	display:inline-block;margin-top:4px;padding:11px 22px;border-radius:999px;text-decoration:none;
+	background:var(--navy);color:#fff;font-weight:500;font-size:15px;transition:background .15s ease;
+}
+.ty-card-btn:hover{background:var(--night);}
+
+/* ---------- Awards strip ---------- */
+.ty-awards{padding:56px 0 0;}
+.ty-awards-list{display:flex;justify-content:center;flex-wrap:wrap;gap:14px 38px;list-style:none;margin:0;padding:0;}
+.ty-awards-list li{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--muted);}
+.ty-awards-list svg{width:18px;height:18px;color:var(--gold);flex:none;}
+
+/* ---------- Sections ---------- */
+.ty-sec{padding:90px 0 0;}
+.ty-split-grid{display:grid;grid-template-columns:290px 1fr;gap:64px;align-items:start;}
+.ty-side{position:sticky;top:32px;}
+.ty-side .ty-kicker{margin-bottom:16px;color:var(--old-gold);font-size:12.5px;}
+.ty-side h2{font-size:clamp(28px,3.2vw,38px);line-height:1.15;margin-bottom:16px;}
+.ty-side p{color:var(--muted);font-size:16.5px;}
+
+/* ---------- Videos ---------- */
+.ty-vgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.ty-vcard{margin:0;}
+.ty-vcard[hidden]{display:none;}
+.ty-vthumb{
+	position:relative;display:block;width:100%;aspect-ratio:4/5;padding:0;border:0;cursor:pointer;overflow:hidden;
+	background:var(--mist);border-radius:var(--radius);box-shadow:var(--shadow-sm);
+	transition:transform .3s ease,box-shadow .3s ease;
+}
+.ty-vthumb:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.ty-vthumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.ty-vthumb:hover img{transform:scale(1.05);}
+.ty-vthumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,26,46,0) 45%,rgba(8,26,46,.88));}
+.ty-play{
+	position:absolute;top:50%;left:50%;z-index:2;width:62px;height:62px;margin:-31px 0 0 -31px;border-radius:50%;
+	background:var(--gold);display:flex;align-items:center;justify-content:center;
+	box-shadow:0 0 0 8px rgba(254,193,7,.25);transition:transform .2s ease,box-shadow .2s ease;
+}
+.ty-play svg{margin-left:3px;width:20px;height:20px;}
+.ty-vthumb:hover .ty-play{transform:scale(1.1);box-shadow:0 0 0 12px rgba(254,193,7,.2);}
+.ty-vthumb:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
+.ty-vcap{
+	position:absolute;left:18px;right:18px;bottom:16px;z-index:2;text-align:left;
+	font-family:var(--serif);font-weight:500;font-size:17px;line-height:1.35;color:#fff;
+}
+.ty-more-wrap{margin-top:30px;}
+.ty-loadmore{
+	display:inline-flex;align-items:center;gap:10px;
+	font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+	background:transparent;color:var(--navy);border:1.5px solid var(--navy);border-radius:999px;
+	padding:13px 28px;cursor:pointer;transition:background .15s ease,color .15s ease;
+}
+.ty-loadmore:hover{background:var(--navy);color:#fff;}
+.ty-loadmore[hidden]{display:none;}
+
+/* ---------- Tours ---------- */
+.ty-band{background:var(--mist);margin-top:90px;padding:90px 0;}
+.ty-band .ty-sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:40px;}
+.ty-band h2{font-size:clamp(28px,3.2vw,40px);line-height:1.15;margin-top:14px;}
+.ty-band .ty-sec-head > p{max-width:420px;color:var(--muted);font-size:16.5px;}
+.ty-tours{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.ty-tour{
+	display:flex;flex-direction:column;background:#fff;border-radius:var(--radius);overflow:hidden;
+	box-shadow:var(--shadow-sm);transition:transform .3s ease,box-shadow .3s ease;
+}
+.ty-tour:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
+.ty-tour-media{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--line);}
+.ty-tour-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.ty-tour:hover .ty-tour-media img{transform:scale(1.06);}
+.ty-dur{
+	position:absolute;left:14px;top:14px;padding:5px 12px;border-radius:999px;
+	background:rgba(8,26,46,.82);color:var(--gold);font-size:12.5px;font-weight:600;letter-spacing:.06em;
+}
+.ty-tour-body{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1;}
+.ty-tour h3{font-size:22px;line-height:1.25;margin-bottom:10px;}
+.ty-desc{color:var(--muted);font-size:15.5px;line-height:1.6;flex:1;}
+.ty-view{
+	display:inline-flex;align-items:center;gap:8px;margin-top:18px;
+	font-weight:600;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);text-decoration:none;
+}
+.ty-view svg{width:16px;height:16px;transition:transform .2s ease;}
+.ty-view:hover{color:var(--old-gold);}
+.ty-view:hover svg{transform:translateX(4px);}
+
+/* ---------- Other trains ---------- */
+.ty-others{padding:90px 0;}
+.ty-others-head{text-align:center;margin-bottom:36px;}
+.ty-others-head h2{font-size:clamp(26px,3vw,34px);margin-top:12px;}
+.ty-trains{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.ty-train{
+	display:flex;flex-direction:column;border-radius:var(--radius);overflow:hidden;text-decoration:none;
+	background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm);
+	transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+.ty-train:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--gold);}
+.ty-train-logo{display:flex;align-items:center;justify-content:center;height:190px;padding:22px;background:#fff;}
+.ty-train-logo img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;transition:transform .5s ease;}
+.ty-train:hover .ty-train-logo img{transform:scale(1.05);}
+.ty-train span{
+	flex:1;display:flex;justify-content:space-between;align-items:center;gap:12px;
+	padding:16px 22px;background:var(--night);color:#fff;
+	font-family:var(--serif);font-size:20px;font-weight:600;
+}
+.ty-train span svg{width:20px;height:20px;flex:none;color:var(--gold);transition:transform .2s ease;}
+.ty-train:hover span svg{transform:translateX(4px);}
+
+/* ---------- CTA ---------- */
+.ty-cta{position:relative;isolation:isolate;overflow:hidden;color:#fff;padding:100px 0;}
+.ty-cta img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;}
+.ty-cta::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,26,46,.95) 30%,rgba(14,42,71,.7));}
+.ty-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:40px;}
+.ty-cta .ty-kicker{color:var(--gold);margin-bottom:16px;}
+.ty-cta h2{font-size:clamp(28px,3.6vw,42px);line-height:1.15;max-width:600px;margin-bottom:16px;color:#fff;}
+.ty-cta p:not(.ty-kicker){color:rgba(255,255,255,.8);max-width:460px;font-size:17px;}
+.ty-btn{
+	display:inline-flex;align-items:center;gap:10px;flex:none;background:var(--gold);color:var(--deep);
+	text-decoration:none;border-radius:999px;font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+	padding:18px 32px;border:1.5px solid var(--gold);box-shadow:0 12px 30px rgba(254,193,7,.25);
+	transition:background .15s ease,color .15s ease,transform .15s ease;
+}
+.ty-btn svg{width:20px;height:20px;}
+.ty-btn:hover{background:transparent;color:var(--gold);transform:translateY(-2px);}
+/* ---------- Video pop-up ---------- */
+.ty-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(8,26,46,.9);}
+.ty-modal.open{display:flex;}
+.ty-modal-box{background:#000;position:relative;max-width:100%;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5);}
+.ty-modal-box.portrait{height:min(88vh,800px);aspect-ratio:9/16;}
+.ty-modal-box.landscape{width:min(92vw,900px);aspect-ratio:16/9;}
+.ty-modal-box iframe{width:100%;height:100%;border:0;display:block;}
+.ty-modal-close{position:fixed;top:14px;right:20px;z-index:1001;background:none;border:0;color:#fff;font-size:40px;line-height:1;cursor:pointer;padding:4px 10px;}
+
+/* ---------- Scroll reveal ---------- */
+.ty-reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.ty-reveal.in{opacity:1;transform:none;}
+
+@media (prefers-reduced-motion:reduce){
+	html{scroll-behavior:auto;}
+	.ty-hero-img{animation:none;}
+	.ty-hero-img{transform:none;}
+	.ty-check path{animation:none;stroke-dashoffset:0;}
+	.ty-reveal{opacity:1;transform:none;transition:none;}
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:960px){
+	.ty-contact-grid,.ty-tours{grid-template-columns:1fr 1fr;}
+	.ty-contact-grid .ty-card:last-child,.ty-tours .ty-tour:last-child{grid-column:1 / -1;}
+	.ty-trains{gap:14px;}
+	.ty-train-logo{height:140px;padding:14px;}
+	.ty-train span{font-size:16px;padding:12px 14px;}
+	.ty-split-grid{grid-template-columns:1fr;gap:30px;}
+	.ty-side{position:static;}
+	.ty-band .ty-sec-head{flex-direction:column;align-items:flex-start;gap:14px;}
+	.ty-cta-inner{flex-direction:column;align-items:flex-start;}
+}
+@media (max-width:899px){
+	.ty-hero-inner{padding-top:calc(var(--head-h) + 48px);}
+}
+@media (max-width:640px){
+	.ty-wrap{padding:0 20px;}
+	.ty-hero{padding-bottom:120px;}
+	.ty-hero-inner{padding-top:calc(var(--head-h) + 36px);}
+	.ty-check{width:70px;height:70px;}
+	.ty-contact{margin-top:-80px;}
+	.ty-contact-grid,.ty-tours,.ty-trains{grid-template-columns:1fr;}
+	.ty-sec{padding-top:64px;}
+	.ty-band{margin-top:64px;padding:64px 0;}
+	.ty-others{padding:64px 0;}
+	.ty-vgrid{gap:14px;}
+	.ty-play{width:50px;height:50px;margin:-25px 0 0 -25px;}
+	.ty-vcap{font-size:15px;left:12px;right:12px;bottom:12px;}
+	.ty-cta{padding:70px 0;}
+	.ty-btn{width:100%;justify-content:center;}
+}
+</style>
+</head>
+<body class="v2 has-hero">
+<a class="skip" href="#main">Skip to content</a>
+<header class="head" data-head>
+	<div class="head-util">
+		<div class="wrap util-row">
+			<p class="util-contact">
+				<a href="tel:+919810145718" data-track-click="call_header"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>+91-9810145718</span></a>
+				<a href="mailto:rajiv@royalindiantrains.com" data-track-click="email_header"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>rajiv@royalindiantrains.com</span></a>
+			</p>
+			<div class="lang" data-lang-switcher><button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-desk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.6 2.5 3.8 5.5 3.8 9s-1.2 6.5-3.8 9c-2.6-2.5-3.8-5.5-3.8-9S9.4 5.5 12 3z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lang-cur" data-lang-current>English</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><div class="lang-menu notranslate" id="lang-desk" hidden><p class="lang-head">Translate this page</p><ul><li><button type="button" lang="en" data-lang="en" aria-current="true">English</button></li><li><button type="button" lang="ar" data-lang="ar">العربية</button></li><li><button type="button" lang="zh-CN" data-lang="zh-CN">简体中文</button></li><li><button type="button" lang="zh-TW" data-lang="zh-TW">繁體中文</button></li><li><button type="button" lang="fr" data-lang="fr">Français</button></li><li><button type="button" lang="de" data-lang="de">Deutsch</button></li><li><button type="button" lang="hi" data-lang="hi">हिन्दी</button></li><li><button type="button" lang="ja" data-lang="ja">日本語</button></li><li><button type="button" lang="es" data-lang="es">Español</button></li></ul><p class="lang-head lang-head-sub">Country sites</p><ul class="lang-regions"><li><a href="https://www.deccanodyssey.com/" hreflang="en-US" aria-current="page">Global (USA)</a></li><li><a href="https://www.deccanodyssey.com/de/" hreflang="de-DE">Deutschland</a></li><li><a href="https://www.deccanodyssey.com/fr/" hreflang="fr-FR">France</a></li><li><a href="https://www.deccanodyssey.com/uk/" hreflang="en-GB">United Kingdom</a></li><li><a href="https://www.deccanodyssey.com/au/" hreflang="en-AU">Australia</a></li><li><a href="https://www.deccanodyssey.com/ca/" hreflang="en-CA">Canada</a></li><li><a href="https://www.deccanodyssey.com/ae/" hreflang="ar-AE">الإمارات</a></li><li><a href="https://www.deccanodyssey.com/sg/" hreflang="en-SG">Singapore</a></li><li><a href="https://www.deccanodyssey.com/nz/" hreflang="en-NZ">New Zealand</a></li></ul></div></div>		</div>
+	</div>
+	<div class="wrap head-row">
+		<a class="brand" href="https://www.deccanodyssey.com/index.html" aria-label="Deccan Odyssey – home"><img src="https://www.deccanodyssey.com/gifs/logo.png" alt="Deccan Odyssey" width="343" height="75"></a>
+		<nav class="nav" aria-label="Main">
+			<ul class="nav-list">
+															<li><a class="nav-link" href="https://www.deccanodyssey.com/index.html">Home</a></li>
+																				<li><a class="nav-link" href="https://www.deccanodyssey.com/about-train.html">About Train</a></li>
+																				<li class="has-sub">
+							<button type="button" class="nav-link sub-btn" aria-expanded="false" aria-controls="sub-2">Journeys<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+							<ul class="sub" id="sub-2">
+																	<li><a href="https://www.deccanodyssey.com/indian-odyssey-journey.html">Indian Odyssey</a></li>
+																	<li><a href="https://www.deccanodyssey.com/indian-sojourn-journey.php">Indian Sojourn</a></li>
+																	<li><a href="https://www.deccanodyssey.com/maharashtra-splendour-journey.html">Maharashtra Splendour</a></li>
+																	<li><a href="https://www.deccanodyssey.com/heritage-odyssey-journey.html">Heritage Odyssey</a></li>
+																	<li><a href="https://www.deccanodyssey.com/cultural-odyssey-journey.html">Cultural Odyssey</a></li>
+																	<li><a href="https://www.deccanodyssey.com/maharashtra-wild-trail-journey.html">Maharashtra Wild Trail</a></li>
+															</ul>
+						</li>
+																				<li><a class="nav-link" href="https://www.deccanodyssey.com/tariff.html">Tariff</a></li>
+																				<li><a class="nav-link" href="https://www.deccanodyssey.com/schedule.html">Schedule</a></li>
+																				<li><a class="nav-link" href="https://www.deccanodyssey.com/special-offers.html">Special Offer</a></li>
+																				<li><a class="nav-link" href="https://www.deccanodyssey.com/gallery.html">Photo Gallery</a></li>
+																				<li><a class="nav-link" href="https://www.deccanodyssey.com/contact-us.html">Contact Us</a></li>
+												</ul>
+		</nav>
+		<div class="head-actions">
+			<div class="lang" data-lang-switcher><button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-mob"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.6 2.5 3.8 5.5 3.8 9s-1.2 6.5-3.8 9c-2.6-2.5-3.8-5.5-3.8-9S9.4 5.5 12 3z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lang-cur" data-lang-current>English</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><div class="lang-menu notranslate" id="lang-mob" hidden><p class="lang-head">Translate this page</p><ul><li><button type="button" lang="en" data-lang="en" aria-current="true">English</button></li><li><button type="button" lang="ar" data-lang="ar">العربية</button></li><li><button type="button" lang="zh-CN" data-lang="zh-CN">简体中文</button></li><li><button type="button" lang="zh-TW" data-lang="zh-TW">繁體中文</button></li><li><button type="button" lang="fr" data-lang="fr">Français</button></li><li><button type="button" lang="de" data-lang="de">Deutsch</button></li><li><button type="button" lang="hi" data-lang="hi">हिन्दी</button></li><li><button type="button" lang="ja" data-lang="ja">日本語</button></li><li><button type="button" lang="es" data-lang="es">Español</button></li></ul><p class="lang-head lang-head-sub">Country sites</p><ul class="lang-regions"><li><a href="https://www.deccanodyssey.com/" hreflang="en-US" aria-current="page">Global (USA)</a></li><li><a href="https://www.deccanodyssey.com/de/" hreflang="de-DE">Deutschland</a></li><li><a href="https://www.deccanodyssey.com/fr/" hreflang="fr-FR">France</a></li><li><a href="https://www.deccanodyssey.com/uk/" hreflang="en-GB">United Kingdom</a></li><li><a href="https://www.deccanodyssey.com/au/" hreflang="en-AU">Australia</a></li><li><a href="https://www.deccanodyssey.com/ca/" hreflang="en-CA">Canada</a></li><li><a href="https://www.deccanodyssey.com/ae/" hreflang="ar-AE">الإمارات</a></li><li><a href="https://www.deccanodyssey.com/sg/" hreflang="en-SG">Singapore</a></li><li><a href="https://www.deccanodyssey.com/nz/" hreflang="en-NZ">New Zealand</a></li></ul></div></div>			<a class="btn btn-gold head-book" href="https://www.deccanodyssey.com/reservation.html" data-track-click="book_header">Book Now</a>
+			<button type="button" class="menu-btn" aria-expanded="false" aria-controls="mnav" data-menu-btn><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M3 7h18M3 12h18M3 17h18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span class="sr">Menu</span></button>
+		</div>
+	</div>
+</header>
+<div class="mnav" id="mnav" hidden data-mnav>
+	<div class="mnav-top">
+		<a class="brand" href="https://www.deccanodyssey.com/index.html"><img src="https://www.deccanodyssey.com/gifs/logo.png" alt="Deccan Odyssey" width="343" height="75"></a>
+		<button type="button" class="menu-close" data-menu-close><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span class="sr">Close menu</span></button>
+	</div>
+	<nav aria-label="Mobile">
+		<ul class="mnav-list">
+												<li><a href="https://www.deccanodyssey.com/index.html">Home</a></li>
+																<li><a href="https://www.deccanodyssey.com/about-train.html">About Train</a></li>
+																<li><details><summary>Journeys<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></summary><ul>
+													<li><a href="https://www.deccanodyssey.com/indian-odyssey-journey.html">Indian Odyssey</a></li>
+													<li><a href="https://www.deccanodyssey.com/indian-sojourn-journey.php">Indian Sojourn</a></li>
+													<li><a href="https://www.deccanodyssey.com/maharashtra-splendour-journey.html">Maharashtra Splendour</a></li>
+													<li><a href="https://www.deccanodyssey.com/heritage-odyssey-journey.html">Heritage Odyssey</a></li>
+													<li><a href="https://www.deccanodyssey.com/cultural-odyssey-journey.html">Cultural Odyssey</a></li>
+													<li><a href="https://www.deccanodyssey.com/maharashtra-wild-trail-journey.html">Maharashtra Wild Trail</a></li>
+											</ul></details></li>
+																<li><a href="https://www.deccanodyssey.com/tariff.html">Tariff</a></li>
+																<li><a href="https://www.deccanodyssey.com/schedule.html">Schedule</a></li>
+																<li><a href="https://www.deccanodyssey.com/special-offers.html">Special Offer</a></li>
+																<li><a href="https://www.deccanodyssey.com/gallery.html">Photo Gallery</a></li>
+																<li><a href="https://www.deccanodyssey.com/contact-us.html">Contact Us</a></li>
+									</ul>
+	</nav>
+	<div class="mnav-foot">
+		<div class="lang" data-lang-switcher><button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-mnav"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.6 2.5 3.8 5.5 3.8 9s-1.2 6.5-3.8 9c-2.6-2.5-3.8-5.5-3.8-9S9.4 5.5 12 3z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lang-cur" data-lang-current>English</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><div class="lang-menu notranslate" id="lang-mnav" hidden><p class="lang-head">Translate this page</p><ul><li><button type="button" lang="en" data-lang="en" aria-current="true">English</button></li><li><button type="button" lang="ar" data-lang="ar">العربية</button></li><li><button type="button" lang="zh-CN" data-lang="zh-CN">简体中文</button></li><li><button type="button" lang="zh-TW" data-lang="zh-TW">繁體中文</button></li><li><button type="button" lang="fr" data-lang="fr">Français</button></li><li><button type="button" lang="de" data-lang="de">Deutsch</button></li><li><button type="button" lang="hi" data-lang="hi">हिन्दी</button></li><li><button type="button" lang="ja" data-lang="ja">日本語</button></li><li><button type="button" lang="es" data-lang="es">Español</button></li></ul><p class="lang-head lang-head-sub">Country sites</p><ul class="lang-regions"><li><a href="https://www.deccanodyssey.com/" hreflang="en-US" aria-current="page">Global (USA)</a></li><li><a href="https://www.deccanodyssey.com/de/" hreflang="de-DE">Deutschland</a></li><li><a href="https://www.deccanodyssey.com/fr/" hreflang="fr-FR">France</a></li><li><a href="https://www.deccanodyssey.com/uk/" hreflang="en-GB">United Kingdom</a></li><li><a href="https://www.deccanodyssey.com/au/" hreflang="en-AU">Australia</a></li><li><a href="https://www.deccanodyssey.com/ca/" hreflang="en-CA">Canada</a></li><li><a href="https://www.deccanodyssey.com/ae/" hreflang="ar-AE">الإمارات</a></li><li><a href="https://www.deccanodyssey.com/sg/" hreflang="en-SG">Singapore</a></li><li><a href="https://www.deccanodyssey.com/nz/" hreflang="en-NZ">New Zealand</a></li></ul></div></div>		<a class="btn btn-gold btn-block" href="https://www.deccanodyssey.com/reservation.html">Book Now</a>
+		<p><a href="tel:+919810145718"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> +91-9810145718</a></p>
+		<p><a href="mailto:rajiv@royalindiantrains.com"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> rajiv@royalindiantrains.com</a></p>
+	</div>
+</div>
+<main class="ty" id="main">
+
+	<!-- Hero -->
+	<section class="ty-hero">
+		<img class="ty-hero-img" src="https://www.deccanodyssey.com/wp-content/themes/deccan-odyssey/assets/img/hero-train-night-1600.webp"
+			srcset="https://www.deccanodyssey.com/wp-content/themes/deccan-odyssey/assets/img/hero-train-night-960.webp 960w, https://www.deccanodyssey.com/wp-content/themes/deccan-odyssey/assets/img/hero-train-night-1600.webp 1600w, https://www.deccanodyssey.com/wp-content/themes/deccan-odyssey/assets/img/hero-train-night-2400.webp 2400w"
+			sizes="100vw" alt="" aria-hidden="true">
+
+		<div class="ty-hero-inner">
+			<div class="ty-check" aria-hidden="true">
+				<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+			</div>
+			<p class="ty-kicker">Deccan Odyssey</p>
+			<h1>Thank you for <em>your enquiry.</em></h1>
+			<p class="ty-lead">Your details are with us. One of our rail specialists will write to you personally within 48 hours, with dates, cabin availability and fares for the departures you're considering.</p>
+			<p class="ty-note">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+				<span>Our reply will come from @royalindiantrains.com email domain. <strong>Please check your spam folder in case you don't see the email.</strong></span>
+			</p>
+			<div class="ty-sign">
+				<div class="ty-sign-name">Rajiv Varma</div>
+				<div class="ty-sign-role">Lawrence Travels, arranging India's great trains since 1989</div>
+			</div>
+		</div>
+		<div class="ty-coach" aria-hidden="true"></div>
+	</section>
+
+	<!-- Contact cards -->
+	<section class="ty-contact">
+		<div class="ty-wrap">
+			<div class="ty-contact-grid">
+				<div class="ty-card ty-reveal">
+					<div class="ty-ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></div>
+					<div class="ty-card-k">Call / WhatsApp</div>
+					<div class="ty-card-row"><a href="tel:+919999677720">+91 9999677720</a><a class="ty-wa-tag" href="https://wa.me/919999677720" target="_blank" rel="noopener">WhatsApp</a></div>
+					<div class="ty-card-row"><a href="tel:+919999677719">+91 9999677719</a><a class="ty-wa-tag" href="https://wa.me/919999677719" target="_blank" rel="noopener">WhatsApp</a></div>
+				</div>
+				<div class="ty-card ty-reveal">
+					<div class="ty-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></div>
+					<div class="ty-card-k">Email</div>
+					<a class="ty-card-v" href="mailto:Karan@royalindiantrains.com">Karan@royalindiantrains.com</a>
+					<a class="ty-card-v" href="mailto:book@lawrencetravels.com">book@lawrencetravels.com</a>
+				</div>
+				<div class="ty-card ty-reveal">
+					<div class="ty-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v3M16 3v3"/><path d="m9 15 2 2 4-4"/></svg></div>
+					<div class="ty-card-k">Prefer to talk it through?</div>
+					<a class="ty-card-btn" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3C5od4zKPQDvV9NK0Kywh1e1FnfUyDHwaGUJhZKWJ80QGJKrl__enkAw3mfTO-yRbdjnBnQgcm?gv=true" target="_blank" rel="noopener">Book a call at a time that suits you</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Awards -->
+	<section class="ty-awards ty-reveal">
+		<div class="ty-wrap">
+			<ul class="ty-awards-list">
+				<li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>World's Leading Luxury Train, World Travel Awards 2019</li>
+				<li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>9-time Asia's Leading Luxury Train</li>
+				<li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>Trip Advisor rating 4.5/5</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Train reviews -->
+	<section class="ty-sec" id="train-reviews">
+		<div class="ty-wrap ty-split-grid">
+			<div class="ty-side ty-reveal">
+				<p class="ty-kicker">Reviews</p>
+				<h2>Watch our luxury train reviews</h2>
+			</div>
+			<div data-more-group class="ty-reveal">
+				<div class="ty-vgrid">
+					<figure class="ty-vcard">
+						<button class="ty-vthumb" type="button" data-id="1XLNlDyf-IQI0csnv0N6liAxcSyDSuqFo" data-orient="p" aria-label="Play: Train Review — Part 1">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/1XLNlDyf-IQI0csnv0N6liAxcSyDSuqFo=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Train Review — Part 1</figcaption>
+						</button>
+					</figure>
+					<figure class="ty-vcard">
+						<button class="ty-vthumb" type="button" data-id="1eOA0l0hv2uZ8-rugqf24tufgtcvtGsCP" data-orient="p" aria-label="Play: Train Review — Part 2">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/1eOA0l0hv2uZ8-rugqf24tufgtcvtGsCP=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Train Review — Part 2</figcaption>
+						</button>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Client reviews -->
+	<section class="ty-sec" id="client-reviews">
+		<div class="ty-wrap ty-split-grid">
+			<div class="ty-side ty-reveal">
+				<p class="ty-kicker">Our Clients</p>
+				<h2>Watch some of <mark>our clients'</mark> reviews</h2>
+				<p>traveling across the Indian subcontinent</p>
+			</div>
+			<div data-more-group class="ty-reveal">
+				<div class="ty-vgrid">
+					<figure class="ty-vcard">
+						<button class="ty-vthumb" type="button" data-id="1_fOEPaoRqqLufZux3uUSiu3FnI-pWLhp" data-orient="p" aria-label="Play: Deccan Odyssey — Capellos (UK)">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/1_fOEPaoRqqLufZux3uUSiu3FnI-pWLhp=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Deccan Odyssey — Capellos (UK)</figcaption>
+						</button>
+					</figure>
+					<figure class="ty-vcard">
+						<button class="ty-vthumb" type="button" data-id="1cgNEaMVZzzw_fYkpoK58Eipxu1DyUOzj" data-orient="l" aria-label="Play: Mr. Arnaud (France) — Maharajas Express">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/1cgNEaMVZzzw_fYkpoK58Eipxu1DyUOzj=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Mr. Arnaud (France) — Maharajas Express</figcaption>
+						</button>
+					</figure>
+					<figure class="ty-vcard" hidden>
+						<button class="ty-vthumb" type="button" data-id="1YwjSXYkYiAETYyolDRLcUtWynl8FirJW" data-orient="p" aria-label="Play: Ms. Samantha Yard Pt. 1 (USA)">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/1YwjSXYkYiAETYyolDRLcUtWynl8FirJW=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Ms. Samantha Yard Pt. 1 (USA)</figcaption>
+						</button>
+					</figure>
+					<figure class="ty-vcard" hidden>
+						<button class="ty-vthumb" type="button" data-id="1foi7uRuoO01JiaUVq1ulfBPJLpYGTs1p" data-orient="p" aria-label="Play: Ms. Sara Group — Rajasthan Tour">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/1foi7uRuoO01JiaUVq1ulfBPJLpYGTs1p=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Ms. Sara Group — Rajasthan Tour</figcaption>
+						</button>
+					</figure>
+					<figure class="ty-vcard" hidden>
+						<button class="ty-vthumb" type="button" data-id="1WOgWqvSSk-qpo13A0YWSQAjOKhzXy0ow" data-orient="p" aria-label="Play: Palace on Wheels">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/1WOgWqvSSk-qpo13A0YWSQAjOKhzXy0ow=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Palace on Wheels</figcaption>
+						</button>
+					</figure>
+					<figure class="ty-vcard" hidden>
+						<button class="ty-vthumb" type="button" data-id="1H8KdTAO9odOWOYYU8fgm6kN5x5-HGzpE" data-orient="p" aria-label="Play: Ms. Samantha Yard Pt. 2 (USA)">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/1H8KdTAO9odOWOYYU8fgm6kN5x5-HGzpE=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Ms. Samantha Yard Pt. 2 (USA)</figcaption>
+						</button>
+					</figure>
+					<figure class="ty-vcard" hidden>
+						<button class="ty-vthumb" type="button" data-id="14fmuvRBvX_r4kBVrLIejWDKAA3LC2t0O" data-orient="p" aria-label="Play: Client Review Video">
+							<img loading="lazy" alt="" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/d/14fmuvRBvX_r4kBVrLIejWDKAA3LC2t0O=w640" onerror="this.style.display='none'">
+							<span class="ty-play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="#081A2E"/></svg></span>
+							<figcaption class="ty-vcap">Client Review Video</figcaption>
+						</button>
+					</figure>
+				</div>
+				<div class="ty-more-wrap"><button class="ty-loadmore" type="button">Load more <span aria-hidden="true">+</span></button></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Extension tours -->
+	<section class="ty-band" id="extensions">
+		<div class="ty-wrap">
+			<div class="ty-sec-head ty-reveal">
+				<div>
+					<p class="ty-kicker">Extend your journey</p>
+				<h2>Before or after the train</h2>
+				</div>
+				<p>Deccan Odyssey journeys start and end in Delhi or Mumbai. These are the journeys our guests most often add on either side of it.</p>
+			</div>
+			<div class="ty-tours">
+				<article class="ty-tour ty-reveal">
+					<div class="ty-tour-media">
+						<img src="https://thepalaceonwheels.com/img/kerala-backwaters.jpg" alt="Kerala backwaters" loading="lazy">
+						<span class="ty-dur">5 Nights / 6 Days</span>
+					</div>
+					<div class="ty-tour-body">
+						<h3>Kerala backwaters</h3>
+						<p class="ty-desc">A few days in old Cochin, then a private houseboat through the canals around Alleppey.</p>
+						<a class="ty-view" href="https://thepalaceonwheels.com/detailed-tours.html" aria-label="View Kerala backwaters tour">View tour <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+					</div>
+				</article>
+				<article class="ty-tour ty-reveal">
+					<div class="ty-tour-media">
+						<img src="https://thepalaceonwheels.com/img/ajanta-ellora-caves.jpg" alt="Ajanta and Ellora caves" loading="lazy">
+						<span class="ty-dur">5 Nights / 6 Days</span>
+					</div>
+					<div class="ty-tour-body">
+						<h3>Mumbai, Ajanta and Ellora</h3>
+						<p class="ty-desc">Rock-cut temples and monasteries carved over eight centuries, lost to the forest and found again.</p>
+						<a class="ty-view" href="https://thepalaceonwheels.com/detailed-tours.html" aria-label="View Mumbai, Ajanta and Ellora tour">View tour <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+					</div>
+				</article>
+				<article class="ty-tour ty-reveal">
+					<div class="ty-tour-media">
+						<img src="https://thepalaceonwheels.com/img/shimla-toy-train.jpg" alt="Shimla toy train" loading="lazy">
+						<span class="ty-dur">5 Nights / 6 Days</span>
+					</div>
+					<div class="ty-tour-body">
+						<h3>Shimla by toy train</h3>
+						<p class="ty-desc">The narrow-gauge Kalka to Shimla line, a UNESCO heritage railway, up to the old summer capital.</p>
+						<a class="ty-view" href="https://thepalaceonwheels.com/detailed-tours.html" aria-label="View Shimla by toy train tour">View tour <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- Other trains -->
+	<section class="ty-others">
+		<div class="ty-wrap">
+			<div class="ty-others-head ty-reveal">
+				<p class="ty-kicker">Also from Royal Indian Trains</p>
+				<h2>India's other great luxury trains</h2>
+			</div>
+			<div class="ty-trains">
+				<a class="ty-train ty-reveal" href="https://thepalaceonwheels.com/" target="_blank" rel="noopener">
+					<div class="ty-train-logo"><img src="https://www.deccanodyssey.com/img/palace-on-wheels.jpg" alt="Palace on Wheels logo" loading="lazy"></div>
+					<span>Palace on Wheels <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+				</a>
+				<a class="ty-train ty-reveal" href="http://themaharajatrain.com/" target="_blank" rel="noopener">
+					<div class="ty-train-logo"><img src="https://www.deccanodyssey.com/img/the-maharaja-train.jpg" alt="Maharajas' Express logo" loading="lazy"></div>
+					<span>Maharajas' Express <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+				</a>
+				<a class="ty-train ty-reveal" href="https://www.goldenchariottrain.com/" target="_blank" rel="noopener">
+					<div class="ty-train-logo"><img src="https://www.deccanodyssey.com/img/gct2.jpg" alt="Golden Chariot logo" loading="lazy"></div>
+					<span>Golden Chariot <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="ty-cta">
+		<img src="https://www.deccanodyssey.com/wp-content/themes/deccan-odyssey/assets/img/dining-car-1600.webp" alt="" aria-hidden="true" loading="lazy">
+		<div class="ty-wrap ty-cta-inner ty-reveal">
+			<div>
+				<p class="ty-kicker">Private tours</p>
+				<h2>Or tell us how you like to travel, and we'll plan the rest.</h2>
+				<p>Private tours across India and the subcontinent, built around your dates and pace.</p>
+			</div>
+			<a class="ty-btn" href="https://wa.me/919999677720" target="_blank" rel="noopener">
+				<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+				Message us on WhatsApp
+			</a>
+		</div>
+	</section>
+
+	<!-- Video pop-up -->
+	<div class="ty-modal" id="tyModal" role="dialog" aria-modal="true" aria-label="Video player">
+		<button class="ty-modal-close" type="button" aria-label="Close video">&times;</button>
+		<div class="ty-modal-box portrait" id="tyModalBox">
+			<iframe id="tyFrame" src="" allow="autoplay; fullscreen" allowfullscreen title="Video"></iframe>
+		</div>
+	</div>
+
+</main>
+
+<footer class="foot">
+	<div class="coach" aria-hidden="true"></div>
+	<div class="wrap foot-grid">
+		<div class="foot-brand">
+			<a class="brand" href="https://www.deccanodyssey.com/index.html"><img loading="lazy" src="https://www.deccanodyssey.com/gifs/logo.png" alt="Deccan Odyssey" width="343" height="75" loading="lazy"></a>
+			<p class="foot-agent">Royal Indian Trains x Lawrence Travels</p>
+			<ul class="foot-contact">
+				<li><a href="tel:+919810145718"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>+91-9810145718</a></li>
+				<li><a href="mailto:rajiv@royalindiantrains.com"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>rajiv@royalindiantrains.com</a></li>
+									<li><a href="https://wa.me/919810145718" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a></li>
+							</ul>
+		</div>
+		<div>
+			<p class="foot-h">Journeys</p>
+			<ul class="foot-links">
+									<li><a href="https://www.deccanodyssey.com/indian-odyssey-journey.html">Indian Odyssey</a></li>
+									<li><a href="https://www.deccanodyssey.com/indian-sojourn-journey.php">Indian Sojourn</a></li>
+									<li><a href="https://www.deccanodyssey.com/maharashtra-splendour-journey.html">Maharashtra Splendour</a></li>
+									<li><a href="https://www.deccanodyssey.com/heritage-odyssey-journey.html">Heritage Odyssey</a></li>
+									<li><a href="https://www.deccanodyssey.com/cultural-odyssey-journey.html">Cultural Odyssey</a></li>
+									<li><a href="https://www.deccanodyssey.com/maharashtra-wild-trail-journey.html">Maharashtra Wild Trail</a></li>
+							</ul>
+		</div>
+		<div>
+			<p class="foot-h">Explore</p>
+			<ul class="foot-links">
+									<li><a href="https://www.deccanodyssey.com/index.html">Home</a></li>
+									<li><a href="https://www.deccanodyssey.com/about-train.html">About Train</a></li>
+									<li><a href="https://www.deccanodyssey.com/tariff.html">Tariff</a></li>
+									<li><a href="https://www.deccanodyssey.com/schedule.html">Schedule</a></li>
+									<li><a href="https://www.deccanodyssey.com/special-offers.html">Special Offers</a></li>
+									<li><a href="https://www.deccanodyssey.com/gallery.html">Photo Gallery</a></li>
+									<li><a href="https://www.deccanodyssey.com/reservation.html">Reservation</a></li>
+									<li><a href="https://www.deccanodyssey.com/contact-us.html">Contact Us</a></li>
+									<li><a href="https://www.deccanodyssey.com/booking-terms-and-conditions.html">Terms &amp; Conditions</a></li>
+								<li><a href="https://www.deccanodyssey.com/blogs.html">Blogs</a></li>
+			</ul>
+		</div>
+		<div>
+			<p class="foot-h">Follow us</p>
+			<ul class="foot-links foot-social">
+				<li><a href="https://www.facebook.com/lawrencetravelsin/" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg>Facebook</a></li>
+				<li><a href="https://www.instagram.com/lawrencetravels" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.3" cy="6.7" r="1.1"/></svg>Instagram</a></li>
+				<li><a href="https://www.youtube.com/channel/UC-vtyuMLz6uFVWj7SI7WnZw" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>YouTube</a></li>
+			</ul>
+			<a class="btn btn-gold foot-book" href="https://www.deccanodyssey.com/reservation.html">Book Now</a>
+		</div>
+	</div>
+	<div class="wrap foot-base">
+		<p>&copy; 2026 Royal Indian Trains x Lawrence Travels</p>
+		<p><a href="https://www.deccanodyssey.com/booking-terms-and-conditions.html">Terms &amp; Conditions</a> <a href="https://www.deccanodyssey.com/privacypolicy.php">Privacy Policy</a></p>
+	</div>
+</footer>
+<nav class="actionbar" aria-label="Quick actions">
+	<a href="tel:+919810145718" data-track-click="call_bar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>Call</span></a>
+			<a href="https://wa.me/919810145718" target="_blank" rel="noopener" data-track-click="whatsapp_bar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg><span>WhatsApp</span></a>
+		<a class="is-primary" href="https://www.deccanodyssey.com/contact-us.html" data-qq-open data-track-click="enquire_bar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M4 20h4L19 9l-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Enquire</span></a>
+</nav>
+<dialog class="qq" id="quick-enquiry" aria-labelledby="qq-title">
+	<div class="qq-top"><p class="qq-title" id="qq-title">Quick enquiry</p><button type="button" class="qq-close" data-qq-close aria-label="Close">
+	<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>	</button></div>
+	<div class="qq-body" data-qq-body><p class="qq-loading">Loading the form…</p></div>
+</dialog>
+<div id="google_translate_element" hidden></div>
+<template id="do-zoho-tpl"><div id="zf_div_23uo4edOR64w9-UKohYTqap_DXB8tQ8Mz34oaqzq60U">
+</div>
+<script type="text/javascript">
+(function() {
+	try{
+		var f = document.createElement("iframe");
+		
+			var ifrmSrc = 'https://forms.zohopublic.in/helloroyalind1/form/DeccanOdysseyMainForm/formperma/23uo4edOR64w9-UKohYTqap_DXB8tQ8Mz34oaqzq60U?zf_rszfm=1';
+		
+		
+        try{
+			if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) {
+				for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				    var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				    utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm;
+				    var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+				    if ( typeof utmVal !== "undefined" ) {
+				      if ( utmVal != "" ) {
+				        if(ifrmSrc.indexOf('?') > 0){
+				             ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal;
+				        }else{
+				            ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal;
+				        }
+				      }
+				    }
+				}
+			}
+			if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+				for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+		        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+		        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+			        if ( typeof utmVal !== "undefined" ) {
+			          if ( utmVal != "" ){
+			            if(ifrmSrc.indexOf('?') > 0){
+			              ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal;//No I18N
+			            }else{
+			              ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal;//No I18N
+			            }
+			          }
+			        }
+		      	}
+			}
+			if (!((new RegExp("[?&]referrername=")).test(ifrmSrc))) {
+            var rfr = window.location.href;
+            
+            try { 
+                rfr = window.self !== window.top ? 
+                    window.top.location.href : 
+                    (/^https?:\/\/[\w.-]+\.[a-zA-Z]{2,}/i.test(rfr) ? rfr : "");
+            } catch (e) {}
+            
+            if (rfr && rfr !== "") {
+                if (rfr.length > 1800) {
+                    var queryIndex = rfr.indexOf('?');
+                    if (queryIndex > -1) {
+                        rfr = rfr.substring(0, queryIndex);
+                    }
+                    if (rfr.length > 1800) {
+                        rfr = rfr.substring(0, 1800);
+                    }
+                }
+                ifrmSrc += ((ifrmSrc.indexOf('?') > 0) ? '&' : '?') + 'referrername=' + encodeURIComponent(rfr);
+            }
+        }
+		}catch(e){}
+	
+		
+		f.src = ifrmSrc;
+		f.style.border="none";
+		f.style.height="1233px";
+		f.style.width="99%";
+		f.style.transition="all 0.5s ease";
+		f.setAttribute("aria-label", 'Deccan Odyssey Booking Form');
+		f.setAttribute("allow","geolocation;");
+		var d = document.getElementById("zf_div_23uo4edOR64w9-UKohYTqap_DXB8tQ8Mz34oaqzq60U");
+		d.appendChild(f);
+		window.addEventListener('message', function (){
+			var evntData = event.data;
+			if( evntData && evntData.constructor == String ){
+				var zf_ifrm_data = evntData.split("|");
+				if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+					var zf_perma = zf_ifrm_data[0];
+					var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+					var iframe = document.getElementById("zf_div_23uo4edOR64w9-UKohYTqap_DXB8tQ8Mz34oaqzq60U").getElementsByTagName("iframe")[0];
+					if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+						var prevIframeHeight = iframe.style.height;
+						var zf_tout = false;
+						if( zf_ifrm_data.length == 3 ) {
+						    iframe.scrollIntoView();
+						    zf_tout = true;
+						}
+
+						if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+							if( zf_tout ) {
+							    setTimeout(function(){
+							        iframe.style.height = zf_ifrm_ht_nw;
+							    },500);
+							} else {
+							    iframe.style.height = zf_ifrm_ht_nw;
+							}
+						}
+					}
+				}
+			}
+		}, false);
+    }catch(e){}
+	
+	
+})();
+</script></template>
+<a class="do-wa-float" href="https://wa.me/919810145718" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a><style>.do-wa-float{position:fixed;right:22px;bottom:22px;z-index:9999;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#1DA851;color:#fff;box-shadow:0 14px 30px rgba(0,0,0,.3);transition:transform .2s}.do-wa-float:hover{color:#fff;transform:scale(1.06)}@media (max-width:899px){.do-wa-float{display:none}}</style>
+
+<script>
+(function () {
+	var root = document.querySelector('.ty');
+	if (!root) return;
+
+	var STEP = 2;
+	root.querySelectorAll('[data-more-group]').forEach(function (group) {
+		var btn = group.querySelector('.ty-loadmore');
+		if (!btn) return;
+		function remaining() { return group.querySelectorAll('.ty-vcard[hidden]'); }
+		function refresh() { btn.hidden = remaining().length === 0; }
+		refresh();
+		btn.addEventListener('click', function () {
+			var h = remaining();
+			for (var i = 0; i < Math.min(STEP, h.length); i++) { h[i].hidden = false; }
+			refresh();
+		});
+	});
+
+	var modal = document.getElementById('tyModal');
+	var box = document.getElementById('tyModalBox');
+	var frame = document.getElementById('tyFrame');
+	var opener = null;
+
+	function openVideo(btn) {
+		opener = btn;
+		box.className = 'ty-modal-box ' + (btn.getAttribute('data-orient') === 'l' ? 'landscape' : 'portrait');
+		frame.src = 'https://drive.google.com/file/d/' + btn.getAttribute('data-id') + '/preview';
+		modal.classList.add('open');
+		modal.querySelector('.ty-modal-close').focus();
+	}
+	function closeVideo() {
+		modal.classList.remove('open');
+		frame.src = '';
+		if (opener) { opener.focus(); opener = null; }
+	}
+
+	root.addEventListener('click', function (e) {
+		var t = e.target.closest ? e.target.closest('.ty-vthumb') : null;
+		if (t) { openVideo(t); }
+	});
+	modal.addEventListener('click', function (e) {
+		if (e.target === modal || e.target.classList.contains('ty-modal-close')) { closeVideo(); }
+	});
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape' && modal.classList.contains('open')) { closeVideo(); }
+	});
+
+	var items = root.querySelectorAll('.ty-reveal');
+	if (!('IntersectionObserver' in window)) {
+		items.forEach(function (el) { el.classList.add('in'); });
+		return;
+	}
+	var io = new IntersectionObserver(function (entries) {
+		entries.forEach(function (entry) {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('in');
+				io.unobserve(entry.target);
+			}
+		});
+	}, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+	items.forEach(function (el) { io.observe(el); });
+})();
+</script>
+<script id="do-v2-js-extra">
+var DO_V2 = {"quickForm":"https://forms.zohopublic.in/helloroyalind1/form/DeccanOdysseyQuickQuery1/formperma/8j-lWS0vSzZVESja8mxpLTDYqY_pxkbMPiTjAdDPKE4?zf_rszfm=1","pageLang":"en","sending":"Sending\u2026"};
+//# sourceURL=do-v2-js-extra
+</script>
+<script defer id="do-v2-js" src="https://www.deccanodyssey.com/wp-content/themes/deccan-odyssey/assets/js/v2.js?ver=2.4.0"></script>
+</body>
+</html>
